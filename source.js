@@ -1,10 +1,10 @@
 class Number {
   constructor(id, properties) {
     this.id = id;
-    this.properties = props;
+    this.properties = properties; // Fix the typo here
   }
   text() {
-    return '{"id":"' + this.id.toString() + '","properties":"' + this.properties.toString() + '" },'
+    return '{"id":"' + this.id.toString() + '","properties":"' + this.properties + '" },'; // Fix the concatenation here
   }
 }
 
